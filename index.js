@@ -17,6 +17,10 @@ function createGrid(rows, cols) {
 
         container.appendChild(cell).className = "grid";
 
+        // change the color of individual cells.
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.background = 'black';
+        });
 
     };
 };
