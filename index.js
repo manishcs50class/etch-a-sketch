@@ -15,6 +15,10 @@ function resetGrid() {
     createGrid(inputRows, inputRows);
 }
 
+function addColor(e) {
+    e.target.style = 'background-color':
+    rgb(${ Math.floor(Math.random) })
+}
 
 function createGrid(rows, cols) {
     container.style.setProperty('--grid-rows', rows);

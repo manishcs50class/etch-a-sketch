@@ -1,6 +1,6 @@
 :root {
-    --grid-cols: 1;
-    --grid-rows: 1;
+    --grid-cols: 16;
+    --grid-rows: 16;
 }
 
 #container {
