@@ -1,5 +1,21 @@
 const container = document.getElementById("container");
 
+//Getting user input for number of rows
+let inputRows;
+function getInputFromUser() {
+    inputRows = prompt("Enter No. of Rows");
+    container.replaceChildren();
+
+    createGrid(inputRows, inputRows);
+}
+
+//resetting the grid
+function resetGrid() {
+    container.replaceChildren();
+    createGrid(inputRows, inputRows);
+}
+
+
 function createGrid(rows, cols) {
     container.style.setProperty('--grid-rows', rows);
     container.style.setProperty('--grid-cols', cols);
@@ -17,11 +33,9 @@ function createGrid(rows, cols) {
 
         container.appendChild(cell).className = "grid";
 
-        // change the color of individual cells.
+        // change the color of individual cells to black.
         container.addEventListener("mouseover", (event) => {
             event.target.style.background = 'black';
         });
-
     };
 };
-createGrid(16, 16);

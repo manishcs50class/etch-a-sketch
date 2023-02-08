@@ -11,14 +11,13 @@
 
 <body>
     <h1>
-        <center>Etch-a-Sketch
+        <center>Etch-a-Sketch</center>
     </h1>
-    </center>
 
     <div class='buttons'>
-        <center><button type="button">New Game</button>
-            <button type="button">Eraser</button>
-            <button type="reset">Reset All</button>
+        <center><button id="reset" type="button" onclick="resetGrid()">Reset</button>
+            <button id="rowPrompt" type="button" onclick="getInputFromUser()">Click to Enter No. of Rows</button>
+            <button id="colorGradient" type="button">Color Gradient</button>
         </center>
     </div>
     <div id="container"></div>
