@@ -1,18 +1,18 @@
 :root {
-    --grid-cols: 16;
-    --grid-rows: 16;
+  --grid-cols: 16;
+  --grid-rows: 16;
 }
 
 #container {
-    border: solid;
-    display: grid;
-    grid-gap: 0em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: solid;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
 .grid {
-    /* padding: 1em; */
-    border: 1px solid #0c0202;
-    text-align: center;
+  /* padding: 1em; */
+  border: 1px solid #0c0202;
+  text-align: center;
 }

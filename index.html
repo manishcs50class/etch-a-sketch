@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device.width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device.width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href='style.css'>
-    <title> Etch-a-Sketch</title>
-</head>
-
-<body>
+  <body>
     <h1>
-        <center>Etch-a-Sketch</center>
+      <center>Etch-a-Sketch</center>
     </h1>
 
-    <div class='buttons'>
-        <center><button id="reset" type="button" onclick="resetGrid()">Reset</button>
-            <button id="rowPrompt" type="button" onclick="getInputFromUser()">Click to Enter No. of Rows</button>
-            <button id="colorGradient" type="button" onclick="addColor()">Color Gradient</button>
-        </center>
+    <div class="buttons">
+      <center>
+        <button id="reset" type="button" onclick="resetGrid()">Reset</button>
+        <button id="rowPrompt" type="button" onclick="getInputFromUser()">
+          Click to Enter No. of Rows
+        </button>
+        <button id="colorGradient" type="button" onclick="colorGradient()">
+          Color Gradient
+        </button>
+      </center>
     </div>
     <div id="container"></div>
-    <br><br>
-    <script src='index.js'></script>
-</body>
-
+    <br /><br />
+    <script src="index.js"></script>
+  </body>
 </html>
