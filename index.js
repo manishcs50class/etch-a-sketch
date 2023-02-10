@@ -15,8 +15,12 @@ function resetGrid() {
   createGrid(inputRows, inputRows);
 }
 
-function colorGradient() {}
+// function gradient(event) {
+//     event.target.style.background = "black";
+//     event.style.opacity = parseFloat(event.style.opacity)+0.2;
+// }
 
+// Change the cell color to different shades of RGB on mouseover
 function getRandomRGBColor() {
   var red = Math.floor(Math.random() * 256); // range is 0-255
   var green = Math.floor(Math.random() * 256);
@@ -33,6 +37,7 @@ function createGrid(rows, cols) {
     let cell = document.createElement("div");
     // Cells are unique because we have to change color individually
     cell.setAttribute("id", cellCount + 1);
+    cell.setAttribute("class", "random");
 
     // Make cells visible.
     cell.style.border = "0.1em solid black";
@@ -41,9 +46,13 @@ function createGrid(rows, cols) {
 
     container.appendChild(cell).className = "grid";
 
-    // change the color of individual cells to black.
-    container.addEventListener("mouseover", (event) => {
-      event.target.style.background = getRandomRGBColor();
+    // change the color of individual cells to random color with gradient.
+    cell.addEventListener("mouseenter", () => {
+        const currentOpacity = Number(cell.style.opacity);
+        cell.style.background = getRandomRGBColor();
+        cell.style.opacity = currentOpacity+.2;
+
+        
     });
   }
 }
