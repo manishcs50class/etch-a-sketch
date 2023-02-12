@@ -51,8 +51,6 @@ function createGrid(rows, cols) {
         const currentOpacity = Number(cell.style.opacity);
         cell.style.background = getRandomRGBColor();
         cell.style.opacity = currentOpacity+.2;
-
-        
     });
   }
 }
